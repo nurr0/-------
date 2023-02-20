@@ -16,6 +16,7 @@ def parse_krisha(url, max_page):
             'id',
             'Ссылка',
             'Комнаты',
+            'Кв. метры'
             'Адрес',
             'Цена',
             'Цена за кв.м')
@@ -53,6 +54,7 @@ def parse_krisha(url, max_page):
                 writer.writerow((
                     id,
                     f'krisha.kz{link}',
+                    rooms,
                     m_2,
                     adress,
                     price,
